@@ -1,72 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy - FilterTube</title>
+
   <style>
     body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 20px;
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background: #0f0f1a;
+      color: #e5e5e5;
       line-height: 1.6;
-      color: #111;
     }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
     h1 {
-      color: #e11d48;
+      color: #ff3b3b;
+      font-size: 32px;
+      margin-bottom: 10px;
     }
+
     h2 {
-      margin-top: 20px;
+      margin-top: 30px;
+      color: #ffffff;
+      font-size: 20px;
+      border-left: 4px solid #ff3b3b;
+      padding-left: 10px;
+    }
+
+    p,
+    li {
+      color: #cfcfcf;
+      font-size: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .box {
+      background: #1a1a2a;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+    .highlight {
+      color: #ff3b3b;
+      font-weight: 600;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 12px;
+      color: #777;
+      text-align: center;
+    }
+
+    a {
+      color: #ff3b3b;
     }
   </style>
 </head>
+
 <body>
+  <div class="container">
 
-  <h1>Privacy Policy for FilterTube</h1>
+    <h1>Privacy Policy</h1>
+    <p>Last updated: June 2026</p>
 
-  <p>Last updated: 2026</p>
+    <div class="box">
+      <p>
+        This Privacy Policy explains how <span class="highlight">FilterTube</span> operates as a Chrome Extension
+        and how it handles user data.
+      </p>
+    </div>
 
-  <h2>Overview</h2>
-  <p>
-    FilterTube is a Chrome extension designed to filter YouTube content by blocking keywords,
-    hiding Shorts, and removing distractions to improve user focus and productivity.
-  </p>
+    <h2>1. Overview</h2>
+    <p>
+      FilterTube is a browser extension designed to improve YouTube usage by filtering videos based on keywords,
+      blocking unwanted content, and enabling focus features.
+    </p>
+    <p>
+      The extension is built to work entirely inside your browser and does not require external servers.
+    </p>
 
-  <h2>Data Collection</h2>
-  <p>
-    FilterTube does not collect, store, or transmit any personal data to external servers.
-  </p>
+    <h2>2. Data Collection</h2>
+    <p>
+      FilterTube does <span class="highlight">not collect, store, or transmit any personal data</span>.
+    </p>
 
-  <h2>Local Storage Usage</h2>
-  <p>
-    FilterTube uses Chrome's local storage API only to save user preferences such as:
-  </p>
-  <ul>
-    <li>Blocked keywords</li>
-    <li>Whitelisted channels</li>
-    <li>Display settings (blur or hide mode)</li>
-  </ul>
+    <p>The extension processes only:</p>
+    <ul>
+      <li>Video titles (on YouTube pages)</li>
+      <li>Channel names</li>
+      <li>User-defined filter keywords</li>
+      <li>User settings stored locally</li>
+    </ul>
 
-  <h2>Data Sharing</h2>
-  <p>
-    No user data is sold, shared, or transferred to third parties.
-  </p>
+    <div class="box">
+      <p><b>Important:</b> All processing happens locally inside your browser using content scripts.</p>
+    </div>
 
-  <h2>Remote Code</h2>
-  <p>
-    FilterTube does not use remote code execution. All scripts are included within the extension package.
-  </p>
+    <h2>3. Permissions Used</h2>
+    <p>FilterTube requests the following Chrome permissions:</p>
 
-  <h2>Third-Party Services</h2>
-  <p>
-    FilterTube does not use any third-party analytics or tracking services.
-  </p>
+    <ul>
+      <li><b>storage</b> – to save your filter settings locally</li>
+      <li><b>activeTab</b> – to interact with the current YouTube tab</li>
+      <li><b>youtube.com access</b> – to read video titles and apply filters</li>
+    </ul>
 
-  <h2>Contact</h2>
-  <p>
-    If you have any questions about this Privacy Policy, you can contact the developer via the Chrome Web Store listing.
-  </p>
+    <h2>4. Data Storage</h2>
+    <p>
+      All settings (keywords, blocked terms, whitelist channels, and toggles)
+      are stored using <span class="highlight">chrome.storage.sync</span>.
+    </p>
 
+    <p>
+      This data remains inside your Google account's Chrome sync system and is never sent externally.
+    </p>
+
+    <h2>5. Data Sharing</h2>
+    <p>
+      FilterTube does <span class="highlight">not share any data with third parties</span>.
+    </p>
+
+    <h2>6. External Servers</h2>
+    <p>
+      This extension does <span class="highlight">not use any backend servers</span>.
+      No analytics, tracking scripts, or external APIs are used.
+    </p>
+
+    <h2>7. Security</h2>
+    <p>
+      Since all processing happens locally, your data never leaves your browser.
+      This minimizes any security risks.
+    </p>
+
+    <h2>8. Children’s Privacy</h2>
+    <p>
+      FilterTube does not knowingly collect data from anyone, including children under 13.
+    </p>
+
+    <h2>9. Changes to This Policy</h2>
+    <p>
+      This Privacy Policy may be updated in future versions of the extension.
+      Any changes will be reflected in this document.
+    </p>
+
+    <h2>10. Contact</h2>
+    <p>
+      If you have questions about this Privacy Policy, you can contact the developer via GitHub or extension listing
+      page.
+    </p>
+
+    <div class="box">
+      <p>
+        GitHub: <a href="https://github.com/ShoaibKhanJ">https://github.com/ShoaibKhanJ</a><br />
+      <p>
+        <b>Email:</b>
+        <a href="mailto:devnexa.contact@gmail.com">devnexa.contact@gmail.com</a>
+      </p>
+      <p>
+        Linkeden: <a href="https://www.linkedin.com/in/shoaibkj/">https://www.linkedin.com/in/shoaibkj/</a><br />
+      <p>
+        Extension Name: FilterTube
+      </p>
+
+    </div>
+
+    <footer>
+      © 2026 FilterTube. All rights reserved.
+    </footer>
+
+  </div>
 </body>
+
 </html>
